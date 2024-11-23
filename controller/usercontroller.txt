@@ -1,26 +1,23 @@
 <?php
-require_once 'models/UserModel.php';
-require_once 'views/UserView.php';
+require_once __DIR__ . '/../models/UserModel.php';
 
 class UserController {
     private $model;
-    private $view;
 
     public function __construct() {
         $this->model = new UserModel();
-        $this->view = new UserView();
     }
 
-    // Menampilkan semua pengguna
-    public function listUsers() {
+    // Tampilkan semua pengguna
+    public function index() {
         $users = $this->model->getAllUsers();
-        $this->view->showAllUsers($users);
+        require __DIR__ . '/../views/users/index.php';
     }
 
-    // Menampilkan pengguna berdasarkan ID
-    public function showUser($id) {
+    // Tampilkan detail pengguna
+    public function show($id) {
         $user = $this->model->getUserById($id);
-        $this->view->showUser($user);
+        require __DIR__ . '/../views/users/show.php';
     }
 }
 ?>

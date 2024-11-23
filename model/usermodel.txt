@@ -1,23 +1,19 @@
 <?php
-class UserModel {
-    private $users = [
-        ['id' => 1, 'name' => 'Alice', 'email' => 'alice@example.com'],
-        ['id' => 2, 'name' => 'Bob', 'email' => 'bob@example.com']
-    ];
+require_once __DIR__ . '/../core/Database.php';
 
-    // Mendapatkan semua data pengguna
-    public function getAllUsers() {
-        return $this->users;
+class UserModel {
+    private $db;
+
+    public function __construct() {
+        $this->db = new Database();
     }
 
-    // Mendapatkan satu pengguna berdasarkan ID
+    public function getAllUsers() {
+        return $this->db->query("SELECT * FROM users")->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function getUserById($id) {
-        foreach ($this->users as $user) {
-            if ($user['id'] == $id) {
-                return $user;
-            }
-        }
-        return null;
+        return $this->db->query("SELECT * FROM users WHERE id = :id", ['id' => $id])->fetch(PDO::FETCH_ASSOC);
     }
 }
 ?>
