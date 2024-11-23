@@ -1,0 +1,145 @@
+*{
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing:border-box;
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('../assets/Poppins-Regular.ttf');
+  }
+
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+
+/*NAVBAR*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #213222;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
+.back img{
+    width: 45px;
+    height: 45px;
+    margin-left: 15px;
+}
+
+.tanaman img{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 250px; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ciritanaman{
+    background-color: #f1f7ef; 
+    border: 1px solid #d0d0d0; 
+    border-radius: 15px; 
+    padding: 30px; 
+    margin: 20px auto;
+    width: 90%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: 'poppins';
+}
+
+.ciritanaman h3 {
+    color: #3a5f0b; /* Warna teks hijau gelap */
+    font-size: 1.8em; /* Ukuran huruf lebih besar */
+    text-align: center; /* Teks di tengah */
+    margin-bottom: 10px;
+}
+
+.ciritanaman p {
+    color: #4a4a4a; /* Warna teks abu-abu tua */
+    font-size: 1.2em; /* Ukuran teks */
+    line-height: 1.6; /* Jarak antar baris */
+    text-align: justify; /* Rata kanan dan kiri */
+}
+
+.ciritanaman p i {
+    font-style: italic; /* Menambahkan gaya miring untuk teks dalam tag <i> */
+}
+
+.penanaman{
+    background-color: #f1f7ef; 
+    border: 1px solid #d0d0d0; 
+    border-radius: 15px; 
+    padding: 30px; 
+    margin: 20px auto;
+    width: 90%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: 'poppins';
+}
+
+.penanaman h3 {
+    color: #3a5f0b; /* Warna teks hijau gelap */
+    font-size: 1.8em; /* Ukuran huruf lebih besar */
+    text-align: center; /* Teks di tengah */
+    margin-bottom: 10px;
+}
+
+.penanaman p {
+    color: #4a4a4a; /* Warna teks abu-abu tua */
+    font-size: 1.2em; /* Ukuran teks */
+    line-height: 1.6; /* Jarak antar baris */
+    text-align: justify; /* Rata kanan dan kiri */
+}
+
+.penanaman p i {
+    font-style: italic; /* Menambahkan gaya miring untuk teks dalam tag <i> */
+}
+
+.perawatan{
+    background-color: #f1f7ef; 
+    border: 1px solid #d0d0d0; 
+    border-radius: 15px; 
+    padding: 30px; 
+    margin: 20px auto;
+    width: 90%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: 'poppins';
+}
+
+.perawatan h3 {
+    color: #3a5f0b; /* Warna teks hijau gelap */
+    font-size: 1.8em; /* Ukuran huruf lebih besar */
+    text-align: center; /* Teks di tengah */
+    margin-bottom: 10px;
+}
+
+.perawatan p {
+    color: #4a4a4a; /* Warna teks abu-abu tua */
+    font-size: 1.2em; /* Ukuran teks */
+    line-height: 1.6; /* Jarak antar baris */
+    text-align: justify; /* Rata kanan dan kiri */
+}
+
+.perawatan p i {
+    font-style: italic; /* Menambahkan gaya miring untuk teks dalam tag <i> */
+}
