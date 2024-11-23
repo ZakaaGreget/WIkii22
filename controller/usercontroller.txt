@@ -1,0 +1,26 @@
+<?php
+require_once 'models/UserModel.php';
+require_once 'views/UserView.php';
+
+class UserController {
+    private $model;
+    private $view;
+
+    public function __construct() {
+        $this->model = new UserModel();
+        $this->view = new UserView();
+    }
+
+    // Menampilkan semua pengguna
+    public function listUsers() {
+        $users = $this->model->getAllUsers();
+        $this->view->showAllUsers($users);
+    }
+
+    // Menampilkan pengguna berdasarkan ID
+    public function showUser($id) {
+        $user = $this->model->getUserById($id);
+        $this->view->showUser($user);
+    }
+}
+?>

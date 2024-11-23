@@ -1,0 +1,23 @@
+<?php
+class UserModel {
+    private $users = [
+        ['id' => 1, 'name' => 'Alice', 'email' => 'alice@example.com'],
+        ['id' => 2, 'name' => 'Bob', 'email' => 'bob@example.com']
+    ];
+
+    // Mendapatkan semua data pengguna
+    public function getAllUsers() {
+        return $this->users;
+    }
+
+    // Mendapatkan satu pengguna berdasarkan ID
+    public function getUserById($id) {
+        foreach ($this->users as $user) {
+            if ($user['id'] == $id) {
+                return $user;
+            }
+        }
+        return null;
+    }
+}
+?>
