@@ -11,6 +11,13 @@ body{
 }
 
 /*NAVBAR*/
+.sticky{
+  position: sticky;
+  top: 0;
+  background-color: #213222;
+  font-size: 20px;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -27,22 +34,39 @@ nav a{
     font-weight: bold;
 }
 
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
 /*TAMPILAN AWAL*/
 .container{
   background-color: #DAFEDC;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+}
+
+.container img{
+  margin-left: 20px;
+  width: 40%;
+  height: 40%;
 }
 
 .text{
-  margin-left: 20px;
+  font-family: 'poppins';
+  font-size: 20px;
+  margin-right: 350px;
 }
 
-img{
-  width: 400px;
-  height: 400px;
+.choose{
+  font-size: 25px;
+  font-family: 'poppins';
+  margin-top: 10px;
+  margin-right: 480px;
 }
 
 /*SEARCH*/
@@ -50,37 +74,23 @@ img{
   position: right;
   text-align: center;
   padding: 20px;
-}
-
-.search p {
-  position: left;
-  font-size: 1em;
-  color: #666;
-  margin-bottom: 1em;
-}
-
-.search-bar {
-  position: right;
   display: flex;
-  justify-content: center;
-  margin-bottom: 2em;
+  margin-bottom: 100px;
 }
 
-.search-bar input {
+.atas{
+  justify-content: space-between;
+  display: flex;
+  padding: 50px;
+}
+
+.search input {
   position: right;
-  padding: 20px;
   width: 500px;
+  height: 10px;
   border: 1px solid #000000;
   border-radius: 50px;
-}
-
-.search-bar button {
-  position: right;
-  padding: 10px 10px;
-  background-color: #ffffff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+  padding: 30px;
 }
 
 /*PRODUCT*/
