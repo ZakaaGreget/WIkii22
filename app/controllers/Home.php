@@ -1,22 +1,22 @@
 <?php 
 
 class Home extends Controller {
-    public function index(){
+    public function home(){
         $data['judul'] = 'Home';
         $this->view('templates/header', $data);
-        $this->view('home/index');
+        $this->view('home/home');
         $this->view('templates/footer');
     }
     public function tanamanpangan(){
-        
-        
-        echo 'home/pangan';
-        
+        $data['judul'] = 'Tanaman Pangan';
+        $this->view('templates/header', $data);
+        $this->view('home/tanamanpangan');
+        $this->view('templates/footer');
     }
     public function tanamanhias(){
-        
-       
-        echo 'home/hias';
-       
+        $data['judul'] = 'Tanaman Hias';
+        $this->view('templates/header', $data);
+        $this->view('home/tanamanhias');
+        $this->view('templates/footer');
     }
 }
