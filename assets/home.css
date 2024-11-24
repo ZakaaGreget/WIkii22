@@ -6,8 +6,6 @@
 @font-face {
   font-family: 'poppins';
   src: url('../assets/Poppins-Regular.ttf');
-  
-  
 }
 
 body{
@@ -136,183 +134,290 @@ nav ul li{
   /*PRODUCT*/
   .tanaman1-grid {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
   }
 
-  .product1 {
-    border: 0.1px solid;
-    flex-shrink: 0;
+  .tanaman1 {
     padding: 1px;
     text-align: center;
-    font-size: 20px;
+    list-style-type: none;
+  }
+
+  .tanaman1 a{
+    text-decoration: none;
+    font-family: 'poppins';
     color: #000000;
+    font-size: 20px;
   }
   
-  .product2 {
-    border: 0.1px solid;
-    flex-shrink: 0;
+  .tanaman2 {
     padding: 1px;
     text-align: center;
-    font-size: 20px;
-    color: #000000;
+    list-style-type: none;
   }
 
-  .product3 {
-    border: 0.1px solid;
-    flex-shrink: 0;
-    padding: 1px;
-    text-align: center;
-    font-size: 20px;
+  .tanaman2 a{
+    text-decoration: none;
+    font-family: 'poppins';
     color: #000000;
+    font-size: 20px;
   }
 
-  .product4 {
-    border: 0.1px solid;
-    flex-shrink: 0;
+  .tanaman3 {
     padding: 1px;
     text-align: center;
-    font-size: 20px;
-    color: #000000;
+    list-style-type: none;
   }
 
-  .product5 {
-    border: 0.1px solid;
-    flex-shrink: 0;
-    padding: 1px;
-    text-align: center;
-    font-size: 20px;
+  .tanaman3 a{
+    text-decoration: none;
+    font-family: 'poppins';
     color: #000000;
+    font-size: 20px;
   }
 
-  .product6 {
-    border: 0.1px solid;
-    flex-shrink: 0;
+  .tanaman4 {
     padding: 1px;
     text-align: center;
-    font-size: 20px;
-    color: #000000;
+    list-style-type: none;
   }
- 
+
+  .tanaman4 a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #000000;
+    font-size: 20px;
+  }
+
   .tanaman2-grid {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
   }
 
-  .product7 {
-    border: 0.1px solid;
-    flex-shrink: 0;
+  .tanaman5 {
     padding: 1px;
     text-align: center;
-    font-size: 25px;
+    list-style-type: none;
+  }
+
+  .tanaman5 a{
+    text-decoration: none;
+    font-family: 'poppins';
     color: #000000;
+    font-size: 20px;
   }
   
-  .product8 {
-    border: 0.1px solid;
-    flex-shrink: 0;
+  .tanaman6 {
     padding: 1px;
     text-align: center;
-    font-size: 25px;
-    color: #000000;
+    list-style-type: none;
   }
 
-  .product9 {
-    border: 0.1px solid;
-    flex-shrink: 0;
-    padding: 1px;
-    text-align: center;
-    font-size: 25px;
+  .tanaman6 a{
+    text-decoration: none;
+    font-family: 'poppins';
     color: #000000;
-  }
-
-  .product10 {
-    border: 0.1px solid;
-    flex-shrink: 0;
-    padding: 1px;
-    text-align: center;
-    font-size: 25px;
-    color: #000000;
-  }
-
-  .product11 {
-    border: 0.1px solid;
-    flex-shrink: 0;
-    padding: 1px;
-    text-align: center;
     font-size: 20px;
-    color: #000000;
   }
 
-  .product12 {
-    border: 0.1px solid;
-    flex-shrink: 0;
+  .tanaman7 {
     padding: 1px;
     text-align: center;
-    font-size: 20px;
+    list-style-type: none;
+  }
+
+  .tanaman7 a{
+    text-decoration: none;
+    font-family: 'poppins';
     color: #000000;
+    font-size: 20px;
+  }
+
+  .tanaman8 {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .tanaman8 a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #000000;
+    font-size: 20px;
   }
 
   .tanaman3-grid {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
   }
 
-  .product13 {
-    border: 0.1px solid;
-    flex-shrink: 0;
+  .tanaman9 {
     padding: 1px;
     text-align: center;
-    font-size: 25px;
+    list-style-type: none;
+  }
+
+  .tanaman9 a{
+    text-decoration: none;
+    font-family: 'poppins';
     color: #000000;
+    font-size: 20px;
   }
   
-  .product14 {
-    border: 0.1px solid;
-    flex-shrink: 0;
+  .tanaman10 {
     padding: 1px;
     text-align: center;
-    font-size: 25px;
-    color: #000000;
+    list-style-type: none;
   }
 
-  .product15 {
-    border: 0.1px solid;
-    flex-shrink: 0;
-    padding: 1px;
-    text-align: center;
-    font-size: 25px;
+  .tanaman10 a{
+    text-decoration: none;
+    font-family: 'poppins';
     color: #000000;
-  }
-
-  .product16 {
-    border: 0.1px solid;
-    flex-shrink: 0;
-    padding: 1px;
-    text-align: center;
-    font-size: 25px;
-    color: #000000;
-  }
-
-  .product17 {
-    border: 0.1px solid;
-    flex-shrink: 0;
-    padding: 1px;
-    text-align: center;
     font-size: 20px;
-    color: #000000;
   }
 
-  .product18 {
-    border: 0.1px solid;
-    flex-shrink: 0;
+  .tanaman11 {
     padding: 1px;
     text-align: center;
-    font-size: 20px;
+    list-style-type: none;
+  }
+
+  .tanaman11 a{
+    text-decoration: none;
+    font-family: 'poppins';
     color: #000000;
+    font-size: 20px;
+  }
+
+  .tanaman12 {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .tanaman12 a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .tanaman4-grid {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .tanaman13 {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .tanaman13 a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #000000;
+    font-size: 20px;
+  }
+  
+  .tanaman14 {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .tanaman14 a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .tanaman15 {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .tanaman15 a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .tanaman16 {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .tanaman16 a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .tanaman5-grid {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .tanaman17 {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .tanaman17 a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #000000;
+    font-size: 20px;
+  }
+  
+  .tanaman18 {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .tanaman18 a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .tanaman19 {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .tanaman19 a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #000000;
+    font-size: 20px;
+  }
+
+  .tanaman20 {
+    padding: 1px;
+    text-align: center;
+    list-style-type: none;
+  }
+
+  .tanaman20 a{
+    text-decoration: none;
+    font-family: 'poppins';
+    color: #000000;
+    font-size: 20px;
   }
