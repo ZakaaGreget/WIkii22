@@ -10,7 +10,7 @@
 
    <div class="ciritanaman">
     <h3>Ciri Ciri Tanaman</h3>
-    <p><i>Pohon mangga berperawakan besar, dapat mencapai tinggi hingga 30 m atau lebih, 
+    <p><i> <?= $data['ciri'] ?>Pohon mangga berperawakan besar, dapat mencapai tinggi hingga 30 m atau lebih, 
         meski kebanyakan mangga pekarangan hanya sekitar 15 m atau kurang.
         Batang tegak, bercabang kuat; dengan daun-daun lebat membentuk tajuk yang indah berbentuk kubah, 
         oval atau memanjang, dengan diameter sampai 10 m. Kulit batangnya tebal dan kasar[8]
