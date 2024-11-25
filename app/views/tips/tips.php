@@ -12,7 +12,7 @@
     <h3>Ciri Ciri Tanaman</h3>
     <p><i>
         <?php foreach( $data['pangan'] as $ciriT) : ?>
-            <?= $ciriT['ciri'] ?> <!-- liat models yg tips -->
+            <?= $ciriT['ciri']; ?> <!-- liat models yg tips -->
         <?php endforeach; ?>
     </i></p>
    </div>
@@ -23,7 +23,7 @@
     <ul>
         <i>
             <?php foreach( $data['pangan'] as $caraT) : ?>
-                <?= $caraT['cara'] ?> <!-- liat models yg tips -->
+                <?= $caraT['cara']; ?> <!-- liat models yg tips -->
             <?php endforeach; ?>
         </i>
     </ul>
@@ -35,7 +35,7 @@
     <ul>
         <i> 
             <?php foreach( $data['pangan'] as $rawat) : ?>
-                <?= $rawat['perawatan'] ?> <!-- liat models yg tips -->
+                <?= $rawat['perawatan']; ?> <!-- liat models yg tips -->
             <?php endforeach; ?>
         </i>
     </ul>
