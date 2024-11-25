@@ -12,7 +12,7 @@
     <h3>Ciri Ciri Tanaman</h3>
     <p><i>
         <?php foreach( $data['ciri'] as $ciriT) : ?>
-            <?= $ciriT['ciri'] ?>
+            <?= $ciriT['ciri'] ?> <!-- liat models yg tips -->
         <?php endforeach; ?>
     </i></p>
    </div>
@@ -21,16 +21,11 @@
     <h3>Cara Penanaman</h3>
     <p><i>Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu:</i></p>
     <ul>
-        <i>1. Semai biji <br> 
-            2. Pilih biji mangga yang sehat dan kuat, lalu keringkan dan kupas kulitnya. 
-            Semai biji di kotak semai dengan bagian perut menghadap ke bawah. 
-            Pastikan bibit tidak kekurangan air selama proses penyemaian. <br> 
-            3. Okulasi <br> 
-            4. Tempelkan tunas batang dari pohon mangga yang berkualitas ke batang bawah pohon yang kuat. 
-            Okulasi sebaiknya dilakukan di musim kemarau agar bagian yang ditempelkan tidak membusuk. <br> 
-            5. Cangkok <br> 
-            6. Pilih batang yang berdiameter 2,5 cm dan berasal dari tanaman yang berumur minimal 1 tahun. 
-            Buat sayatan sepanjang 5 cm, lalu beri pupuk kandang dan bungkus dengan sabut kelapa dan plastik.</i>
+        <i>
+            <?php foreach( $data['cara'] as $caraT) : ?>
+                <?= $caraT['isi'] ?> <!-- liat models yg tips -->
+            <?php endforeach; ?>
+        </i>
     </ul>
    </div>
 
