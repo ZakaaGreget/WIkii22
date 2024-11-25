@@ -33,12 +33,10 @@
     <h3>Perawatan Khusus</h3>
     <p><i>Selain cara penanaman, ada beberapa hal yang perlu diperhatikan untuk menanam pohon mangga, yaitu:</i></p>
     <ul>
-        <i> 1. Pilih lokasi yang tepat, yaitu tempat yang mendapat sinar matahari penuh selama 6-8 jam sehari. <br> 
-            2. Gunakan tanah yang baik, dengan pH antara 6-7 dan drainase yang baik.<br> 
-            3. Pilih varietas yang sesuai dengan iklim dan lokasi. <br> 
-            4. Siram pohon mangga secara teratur, terutama saat musim kemarau. <br>
-            5. Beri pupuk yang mengandung unsur hara seperti nitrogen, fosfor, dan kalium secara teratur. <br> 
-            6. Lindungi pohon mangga dari hama dan penyakit. <br>
-            7. Lakukan pemangkasan rutin pada bagian batang, tangkai, dan daun mati.</i>
+        <i> 
+            <?php foreach( $data['perawatan'] as $rawat) : ?>
+                <?= $rawat['isi'] ?> <!-- liat models yg tips -->
+            <?php endforeach; ?>
+        </i>
     </ul>
    </div>

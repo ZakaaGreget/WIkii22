@@ -6,6 +6,7 @@ class Tips extends Controller{
         $data['judul'] = 'Tips';
         $data['ciri'] = $this->model('Tips_model')->getCiri();
         $data['cara'] = $this->model('Tips_model')->getCara();
+        $data['perawatan'] = $this->model('Tips_model')->getPerawatan();
         $this->view('templates/header', $data);
         $this->view('tips/tips', $data);
         $this->view('templates/footer');
