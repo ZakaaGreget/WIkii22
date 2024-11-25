@@ -15,6 +15,11 @@ class Tips_model {
         return $this->db->resultSet();
     }
 
+    public function getTanamanbyName($nama){
+        $this->db->query('SELECT * FROM ' . $this->table . 'WHERE nama=:nama');
+        $this->db->bind('nama', $nama);
+        return $this->db->single();
+    }
 
     // private $ciriT = [
     //     [
