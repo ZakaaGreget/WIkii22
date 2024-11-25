@@ -1,11 +1,32 @@
 <?php 
 
 class Tips_model {
+
+    private $dbh;
+    private $stmt;
+
+    public function __construct(){
+        $dsn = 'mysql:host=localhost;dbname=wikitani';
+
+        try{
+            $this->dbh = new PDO($dsn,'root','');
+        }catch(PDOException $e){
+            die(''. $e->getMessage());
+        }
+    }
+    
+    public function getAllPangan(){
+        $this->stmt = $this->dbh->prepare('SELECT *FROM tanamanpangan');
+        $this->stmt->execute();
+        return $this->stmt->fetchAll(PDO::FETCH_ASSOC);  
+    }
+
+
     private $ciriT = [
         [
             "nama" => "Mangga",
             "ciri"=> "Pohon mangga berperawakan besar, dapat mencapai tinggi hingga 30 m atau lebih, 
-        meski kebanyakan mangga pekarangan hanya sekitar 15 m atau kurang.
+        metod kebanyakan mangga pekarangan hanya sekitar 15 m atau kurang.
         Batang tegak, bercabang kuat; dengan daun-daun lebat membentuk tajuk yang indah berbentuk kubah, 
         oval atau memanjang, dengan diameter sampai 10 m. Kulit batangnya tebal dan kasar
         dengan banyak celah-celah kecil dan sisik-sisik bekas tangkai daun. 
@@ -16,7 +37,7 @@ class Tips_model {
         [
             "head" => "Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu:",
             "isi" =>  "1. Semai biji <br> 
-            2. Pilih biji mangga yang sehat dan kuat, lalu keringkan dan kupas kulitnya. 
+            2. metod biji mangga yang sehat dan kuat, lalu keringkan dan kupas kulitnya. 
             Semai biji di kotak semai dengan bagian perut menghadap ke bawah. 
             Pastikan bibit tidak kekurangan air selama proses penyemaian. <br> 
             3. Okulasi <br> 
@@ -32,7 +53,7 @@ class Tips_model {
         [
             "head" => "Selain cara penanaman, ada beberapa hal yang perlu diperhatikan untuk menanam pohon mangga, yaitu:",
             "isi" =>  "1. Pilih lokasi yang tepat, yaitu tempat yang mendapat sinar matahari penuh selama 6-8 jam sehari. <br> 
-            2. Gunakan tanah yang baik, dengan pH antara 6-7 dan drainase yang baik.<br> 
+            2. Metof Gunakan tanah yang baik, dengan pH antara 6-7 dan drainase yang baik.<br> 
             3. Pilih varietas yang sesuai dengan iklim dan lokasi. <br> 
             4. Siram pohon mangga secara teratur, terutama saat musim kemarau. <br>
             5. Beri pupuk yang mengandung unsur hara seperti nitrogen, fosfor, dan kalium secara teratur. <br> 
@@ -41,14 +62,14 @@ class Tips_model {
         ]
     ];
 
-    public function getCiri(){
-        return $this->ciriT;
-    }
-    public function getCara(){
-        return $this->caraT;
-    }
-    public function getPerawatan(){
-        return $this->perawatan;
-    }
+    // public function getCiri(){
+    //     return $this->ciriT;
+    // }
+    // public function getCara(){
+    //     return $this->caraT;
+    // }
+    // public function getPerawatan(){
+    //     return $this->perawatan;
+    // }
 }
 

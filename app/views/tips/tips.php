@@ -11,7 +11,7 @@
    <div class="ciritanaman">
     <h3>Ciri Ciri Tanaman</h3>
     <p><i>
-        <?php foreach( $data['ciri'] as $ciriT) : ?>
+        <?php foreach( $data['pangan'] as $ciriT) : ?>
             <?= $ciriT['ciri'] ?> <!-- liat models yg tips -->
         <?php endforeach; ?>
     </i></p>
@@ -22,8 +22,8 @@
     <p><i>Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu:</i></p>
     <ul>
         <i>
-            <?php foreach( $data['cara'] as $caraT) : ?>
-                <?= $caraT['isi'] ?> <!-- liat models yg tips -->
+            <?php foreach( $data['pangan'] as $caraT) : ?>
+                <?= $caraT['cara'] ?> <!-- liat models yg tips -->
             <?php endforeach; ?>
         </i>
     </ul>
@@ -34,8 +34,8 @@
     <p><i>Selain cara penanaman, ada beberapa hal yang perlu diperhatikan untuk menanam pohon mangga, yaitu:</i></p>
     <ul>
         <i> 
-            <?php foreach( $data['perawatan'] as $rawat) : ?>
-                <?= $rawat['isi'] ?> <!-- liat models yg tips -->
+            <?php foreach( $data['pangan'] as $rawat) : ?>
+                <?= $rawat['perawatan'] ?> <!-- liat models yg tips -->
             <?php endforeach; ?>
         </i>
     </ul>
