@@ -10,12 +10,11 @@
 
    <div class="ciritanaman">
     <h3>Ciri Ciri Tanaman</h3>
-    <p><i> <?= $data['ciri'] ?>Pohon mangga berperawakan besar, dapat mencapai tinggi hingga 30 m atau lebih, 
-        meski kebanyakan mangga pekarangan hanya sekitar 15 m atau kurang.
-        Batang tegak, bercabang kuat; dengan daun-daun lebat membentuk tajuk yang indah berbentuk kubah, 
-        oval atau memanjang, dengan diameter sampai 10 m. Kulit batangnya tebal dan kasar[8]
-        dengan banyak celah-celah kecil dan sisik-sisik bekas tangkai daun. 
-        Warna<U> pepagan</U>(kulit batang) yang sudah tua biasanya cokelat keabuan, kelabu tua sampai hampir hitam.</i></p>
+    <p><i>
+        <?php foreach( $data['ciri'] as $ciriT) : ?>
+            <?= $ciriT['ciri'] ?>
+        <?php endforeach; ?>
+    </i></p>
    </div>
 
    <div class="penanaman">
