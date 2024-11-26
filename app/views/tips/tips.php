@@ -22,8 +22,10 @@
     <p><i>Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu:</i></p>
     <ul>
         <i>
+            
+?>
             <?php foreach( $data['pangan'] as $caraT) : ?>
-                <?= $caraT['cara']; ?> <!-- liat models yg tips -->
+                <?= $caraT['cara']; ?> liat models yg tips
             <?php endforeach; ?>
         </i>
     </ul>

@@ -18,7 +18,25 @@ class Tips_model {
     public function getTanamanbyName($nama){
         $this->db->query('SELECT * FROM ' . $this->table . ' WHERE nama=:nama');
         $this->db->bind('nama', $nama);
+
+        
+        // Debugging: Log query dan nilai parameter (opt)
+         error_log('Query: SELECT * FROM ' . $this->table . ' WHERE nama=' . $nama);
+         
+          // Debugging: tampilkan query yang dijalankan
+    var_dump('SELECT * FROM ' . $this->table . ' WHERE nama = :nama'); // Menampilkan query yang dijalankan
+    var_dump($nama); // Menampilkan nama yang di-passing
+         
         return $this->db->single();
+
+        //cek (opt)
+        if ($result) {
+            return $result;
+        } else {
+            error_log('Query failed: No results found for nama = ' . $nama);
+            return false;
+        }
+
     }
 
     // private $ciriT = [
@@ -32,22 +50,22 @@ class Tips_model {
     //     Warna<U> pepagan</U>(kulit batang) yang sudah tua biasanya cokelat keabuan, kelabu tua sampai hampir hitam.",
     //     ]
     // ];
-    // private $caraT = [
-    //     [
-    //         "head" => "Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu:",
-    //         "isi" =>  "1. Semai biji <br> 
-    //         2. metod biji mangga yang sehat dan kuat, lalu keringkan dan kupas kulitnya. 
-    //         Semai biji di kotak semai dengan bagian perut menghadap ke bawah. 
-    //         Pastikan bibit tidak kekurangan air selama proses penyemaian. <br> 
-    //         3. Okulasi <br> 
-    //         4. Tempelkan tunas batang dari pohon mangga yang berkualitas ke batang bawah pohon yang kuat. 
-    //         Okulasi sebaiknya dilakukan di musim kemarau agar bagian yang ditempelkan tidak membusuk. <br> 
-    //         5. Cangkok <br> 
-    //         6. Pilih batang yang berdiameter 2,5 cm dan berasal dari tanaman yang berumur minimal 1 tahun. 
-    //         Buat sayatan sepanjang 5 cm, lalu beri pupuk kandang dan bungkus dengan sabut kelapa dan plastik.",
+    private $caraT = [
+        [
+            "head" => "Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu:",
+            "isi" =>  "1. Semai biji <br> 
+            2. metod biji mangga yang sehat dan kuat, lalu keringkan dan kupas kulitnya. 
+            Semai biji di kotak semai dengan bagian perut menghadap ke bawah. 
+            Pastikan bibit tidak kekurangan air selama proses penyemaian. <br> 
+            3. Okulasi <br> 
+            4. Tempelkan tunas batang dari pohon mangga yang berkualitas ke batang bawah pohon yang kuat. 
+            Okulasi sebaiknya dilakukan di musim kemarau agar bagian yang ditempelkan tidak membusuk. <br> 
+            5. Cangkok <br> 
+            6. Pilih batang yang berdiameter 2,5 cm dan berasal dari tanaman yang berumur minimal 1 tahun. 
+            Buat sayatan sepanjang 5 cm, lalu beri pupuk kandang dan bungkus dengan sabut kelapa dan plastik.",
             
-    //     ]
-    // ];
+        ]
+    ];
     // private $perawatan = [
     //     [
     //         "head" => "Selain cara penanaman, ada beberapa hal yang perlu diperhatikan untuk menanam pohon mangga, yaitu:",
