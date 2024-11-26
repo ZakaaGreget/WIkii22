@@ -16,7 +16,7 @@ class Tips_model {
     }
 
     public function getTanamanbyName($nama){
-        $this->db->query('SELECT * FROM ' . $this->table . 'WHERE nama=:nama');
+        $this->db->query('SELECT * FROM ' . $this->table . ' WHERE nama=:nama');
         $this->db->bind('nama', $nama);
         return $this->db->single();
     }
