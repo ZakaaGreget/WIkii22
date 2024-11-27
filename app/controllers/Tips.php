@@ -1,67 +1,45 @@
 <?php 
-
-class Tips extends Controller{
+class Tips {
 
     public function home(){
+        // Mengambil nama dari query string
+        $nama = isset($_GET['nama']) ? $_GET['nama'] : null;
 
-     
-
-
-        $data['judul'] = 'Tips';
-         // Validasi parameter 'nama'
-        // if (isset($_GET['nama']) && !empty($_GET['nama'])) {
-        //     $nama = $_GET['nama'];
-        //     $data['pangan'] = $this->model('Tips_model')->getTanamanbyName($nama);
+        // Debugging untuk memastikan nilai nama
+        error_log('Nama yang diterima: ' . $nama);
+        
+        //GET TANAMAN BY NAME
+        // Jika ada parameter nama, lakukan pencarian di database
+        // if ($nama) {
+        //     $data['pangan'] = $this->model('Tips_model')->getTanamanbyName($name);
+        //     error_log('Data Pangan: ' . print_r($data['pangan'], true));
         // } else {
-        //     $data['pangan'] = []; // Atur data kosong jika 'nama' tidak ditemukan
+        //     $data['pangan'] = []; // Jika tidak ada nama, kirim data kosong
         // }
-    
-        
-        // var_dump($nama);
-        // if (!$nama) {
-        //     die('Parameter "nama" tidak ditemukan di URL!');
-        // }
-        
-        // $data['pangan'] = $this->model('Tips_model')->getTanamanbyName($nama);
-        $data['pangan'] = $this->model('Tips_model')->getAllPangan();
+       
 
+        //GET SEMUAA
+        $data['pangan'] = $this->model('Tips_model')->getAllPangan();
+        
+        // Menampilkan view
+        $data['judul'] = 'Tips';
         $this->view('templates/header', $data);
         $this->view('tips/tips', $data);
         $this->view('templates/footer');
-    
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-           // $data['judul'] = 'Tips';
-        // $nama = isset($_GET['nama']) ? $_GET['nama'] : null;
-        // var_dump($nama);
-        // if ($nama) {
-        //     // Fetch data from the model
-        //     $data['pangan'] = $this->model('Tips_model')->getTanamanbyName($nama);
-
-        //     // Handle the case where no plant is found
-        //     if (empty($data['pangan'])) {
-        //         $data['error'] = "Tanaman dengan nama '$nama' tidak ditemukan.";
-        //     }
-        // } else {
-        //     $data['error'] = "Parameter 'nama' tidak ditemukan di URL!";
-        // }
-
-        // $this->view('templates/header', $data);
-        // $this->view('tips/tips', $data);
-        // $this->view('templates/footer');    
-
-
+        
     }
+
+    // Mengambil model yang diperlukan
+    public function model($model){
+        require_once '../app/models/' . $model . '.php';
+        return new $model;
+    }
+
+    // Menampilkan view yang diperlukan
+    public function view($view, $data = []){
+        require_once '../app/views/' . $view . '.php';
+    }
+
+    
 }

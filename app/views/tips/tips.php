@@ -11,6 +11,12 @@
    <div class="ciritanaman">
     <h3>Ciri Ciri Tanaman</h3>
     <p><i>
+        <!-- <?php if (!empty($data['pangan'])): ?>
+            <?= $data['pangan']['ciri']; ?>  Menampilkan data ciri tanaman
+        <?php else: ?>
+            <p>Data tanaman tidak ditemukan.</p>
+        <?php endif; ?> -->
+
         <?php foreach( $data['pangan'] as $ciriT) : ?>
             <?= $ciriT['ciri']; ?> <!-- liat models yg tips -->
         <?php endforeach; ?>
@@ -23,10 +29,10 @@
     <ul>
         <i>
             
-            <?= $data['pangan']['cara']; ?>
-            <!-- <?php foreach( $data['pangan'] as $caraT) : ?>
+           <? var_dump($data['pangan']);?>
+            <?php foreach( $data['pangan'] as $caraT) : ?>
                 <?= $caraT['cara']; ?> liat models yg tips
-            <?php endforeach; ?> -->
+            <?php endforeach; ?>
         </i>
     </ul>
    </div>
