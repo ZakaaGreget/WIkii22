@@ -8,31 +8,42 @@
         <h1>Bibit Mangga</h1>
    </div>
 
+
+
+
+   
    <div class="ciritanaman">
     <h3>Ciri Ciri Tanaman</h3>
     <p><i>
-        <!-- <?php if (!empty($data['pangan'])): ?>
+        <?php if (!empty($data['pangan'])): ?>
             <?= $data['pangan']['ciri']; ?>  Menampilkan data ciri tanaman
         <?php else: ?>
             <p>Data tanaman tidak ditemukan.</p>
-        <?php endif; ?> -->
+        <?php endif; ?>
 
-        <?php foreach( $data['pangan'] as $ciriT) : ?>
-            <?= $ciriT['ciri']; ?> <!-- liat models yg tips -->
-        <?php endforeach; ?>
+        <!-- <?php foreach( $data['pangan'] as $ciriT) : ?>
+             <?= $ciriT['ciri']; ?>  <-- liat models yg tips 
+        <?php endforeach; ?> -->
     </i></p>
    </div>
+           
+
+
 
    <div class="penanaman">
     <h3>Cara Penanaman</h3>
-    <p><i>Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu:</i></p>
+    <p><i>Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu: biji OBED</i></p>
     <ul>
         <i>
-            
-           <? var_dump($data['pangan']);?>
-            <?php foreach( $data['pangan'] as $caraT) : ?>
+            <?php if (!empty($data['pangan'])): ?>
+                <?= $data['pangan']['cara']; ?>  Menampilkan data ciri tanaman
+            <?php else: ?>
+                <p>Data tanaman tidak ditemukan.</p>
+            <?php endif; ?>
+           
+            <!-- <?php foreach( $data['pangan'] as $caraT) : ?>
                 <?= $caraT['cara']; ?> liat models yg tips
-            <?php endforeach; ?>
+            <?php endforeach; ?> -->
         </i>
     </ul>
    </div>
@@ -42,9 +53,16 @@
     <p><i>Selain cara penanaman, ada beberapa hal yang perlu diperhatikan untuk menanam pohon mangga, yaitu:</i></p>
     <ul>
         <i> 
-            <?php foreach( $data['pangan'] as $rawat) : ?>
-                <?= $rawat['perawatan']; ?> <!-- liat models yg tips -->
-            <?php endforeach; ?>
+            <?php if (!empty($data['pangan'])): ?>
+                <?= $data['pangan']['perawatan']; ?>  Menampilkan data ciri tanaman
+            <?php else: ?>
+                <p>Data tanaman tidak ditemukan.</p>
+            <?php endif; ?>
+
+
+            <!-- <?php foreach( $data['pangan'] as $rawat) : ?>
+                <?= $rawat['perawatan']; ?>  liat models yg tips -->
+            <?php endforeach; ?> -->
         </i>
     </ul>
    </div>
