@@ -24,8 +24,8 @@ class Tips_model {
          error_log('Query: SELECT * FROM ' . $this->table . ' WHERE nama=' . $nama);
          
           // Debugging: tampilkan query yang dijalankan
-    var_dump('SELECT * FROM ' . $this->table . ' WHERE nama = :nama'); // Menampilkan query yang dijalankan
-    var_dump($nama); // Menampilkan nama yang di-passing
+        var_dump('SELECT * FROM ' . $this->table . ' WHERE nama = ' . $nama); // Menampilkan query yang dijalankan
+        var_dump($nama); // Menampilkan nama yang di-passing
          
         return $this->db->single();
 
