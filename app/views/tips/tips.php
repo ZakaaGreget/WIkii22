@@ -28,8 +28,6 @@
    </div>
            
 
-
-
    <div class="penanaman">
     <h3>Cara Penanaman</h3>
     <p><i>Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu: biji OBED</i></p>
@@ -61,7 +59,7 @@
 
 
             <!-- <?php foreach( $data['pangan'] as $rawat) : ?>
-                <?= $rawat['perawatan']; ?>  liat models yg tips -->
+                <?= $rawat['perawatan']; ?>  liat models yg tips
             <?php endforeach; ?> -->
         </i>
     </ul>
