@@ -23,10 +23,10 @@
     <ul>
         <i>
             
-?>
-            <?php foreach( $data['pangan'] as $caraT) : ?>
+            <?= $data['pangan']['cara']; ?>
+            <!-- <?php foreach( $data['pangan'] as $caraT) : ?>
                 <?= $caraT['cara']; ?> liat models yg tips
-            <?php endforeach; ?>
+            <?php endforeach; ?> -->
         </i>
     </ul>
    </div>
