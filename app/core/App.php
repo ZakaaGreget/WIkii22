@@ -38,14 +38,21 @@ public function parseURL(){
         $url = filter_var($url, FILTER_SANITIZE_URL);
         $url = explode('/', $url); // Pisahkan berdasarkan '/'
 
+        // Debug untuk melihat nilai URL
+        error_log('URL Path: ' . print_r($url, true)); // Debug URL Path
+
         // Jika ada query string, simpan di params global $_GET
         if (!empty($_SERVER['QUERY_STRING'])) {
             parse_str($_SERVER['QUERY_STRING'], $queryParams);
             $_GET = array_merge($_GET, $queryParams); // Menggabungkan query string ke $_GET
+
+            // Debug untuk memastikan query string ditambahkan ke $_GET
             error_log('Query Params: ' . print_r($queryParams, true)); // Debug query string
         }
+
         return $url;
     }
     return null; // Jika tidak ada URL
 }
+
 }

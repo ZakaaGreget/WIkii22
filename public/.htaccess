@@ -1,6 +1,12 @@
 Options -Multiviews
 
-RewriteEngine On 
+RewriteEngine On
+
+# Atur base path untuk subfolder public
+RewriteBase /Wikii22/WIKIIFIX/public/
+
+# Jika file atau folder tidak ditemukan, arahkan ke index.php
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ index.php?url=$1 [l] 
+# cek query di url
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]

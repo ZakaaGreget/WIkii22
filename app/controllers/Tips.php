@@ -2,16 +2,17 @@
 class Tips {
 
     public function home(){
-        // Mengambil nama dari query string
-        $nama = isset($_GET['nama']) ? $_GET['nama'] : null;
+        //periksa $get
+        var_dump($_GET);
 
-        // Debugging untuk memastikan nilai nama
-        error_log('Nama yang diterima: ' . $nama);
+        // // Debugging untuk memastikan nilai nama
+        // $nama = isset($_GET['nama']) ? $_GET['nama'] : null;
+    
         
-        //GET TANAMAN BY NAME
-        // Jika ada parameter nama, lakukan pencarian di database
+        // // GET TANAMAN BY NAME
+        // // Jika ada parameter nama, lakukan pencarian di database
         // if ($nama) {
-        //     $data['pangan'] = $this->model('Tips_model')->getTanamanbyName($name);
+        //     $data['pangan'] = $this->model('Tips_model')->getTanamanbyName($nama);
         //     error_log('Data Pangan: ' . print_r($data['pangan'], true));
         // } else {
         //     $data['pangan'] = []; // Jika tidak ada nama, kirim data kosong
