@@ -21,9 +21,7 @@
             <p>Data tanaman tidak ditemukan.</p>
         <?php endif; ?>
 
-        <!-- <?php foreach( $data['pangan'] as $ciriT) : ?>
-             <?= $ciriT['ciri']; ?>  <-- liat models yg tips 
-        <?php endforeach; ?> -->
+       
     </i></p>
    </div>
    
@@ -40,9 +38,7 @@
                 <p>Data tanaman tidak ditemukan.</p>
             <?php endif; ?>
            
-            <!-- <?php foreach( $data['pangan'] as $caraT) : ?>
-                <?= $caraT['cara']; ?> liat models yg tips
-            <?php endforeach; ?> -->
+            
         </i>
     </ul>
    </div>
