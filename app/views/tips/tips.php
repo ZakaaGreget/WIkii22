@@ -26,6 +26,7 @@
         <?php endforeach; ?> -->
     </i></p>
    </div>
+   <h3>Cara Penanaman</h3>
            
 
    <div class="penanaman">
@@ -34,7 +35,7 @@
     <ul>
         <i>
             <?php if (!empty($data['pangan'])): ?>
-                <?= $data['pangan']['cara']; ?>  Menampilkan data ciri tanaman
+                <?= $data['pangan']['cara']; ?>  
             <?php else: ?>
                 <p>Data tanaman tidak ditemukan.</p>
             <?php endif; ?>
