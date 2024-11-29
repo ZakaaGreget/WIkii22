@@ -102,12 +102,9 @@ img {
 
 .penanaman{
     background-color: #f1f7ef; 
-
     border: 1px solid #d0d0d0; 
     border-radius: 15px; 
     padding: 30px; 
-    /* height: 100px;
-    width: 100px; */
     margin: 20px auto;
     width: 90%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
