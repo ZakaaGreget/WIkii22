@@ -50,12 +50,12 @@
 
     <section class="tanaman2-grid">
         <ul class="tanaman5">
-            <li><a href="<?= BASEURL; ?>/tips?nama="><img src="<?= BASEURL; ?>/img/bibit tomat.png" alt="Bibit Tomat"></a></li>
-            <li><a href="<?= BASEURL; ?>/tips?nama=">Bibit Tomat</a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Tomat"><img src="<?= BASEURL; ?>/img/bibit tomat.png" alt="Bibit Tomat"></a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Tomat">Bibit Tomat</a></li>
         </ul>
         <ul class="tanaman6">
-            <li><a href="<?= BASEURL; ?>/tips?nama="><img src="<?= BASEURL; ?>/img/bibit rambutan.png" alt="Bibit Rambutan"></a></li>
-            <li><a href="<?= BASEURL; ?>/tips?nama=">Bibit Rambutan</a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Rambutan"><img src="<?= BASEURL; ?>/img/bibit rambutan.png" alt="Bibit Rambutan"></a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Rambutan">Bibit Rambutan</a></li>
         </ul>
         <ul class="tanaman7">
             <li><a href="<?= BASEURL; ?>/tips?nama="><img src="<?= BASEURL; ?>/img/bibit durian.png" alt="Bibit Durian"></a></li>

@@ -4,8 +4,8 @@
     </div>
 
    <div class="tanaman">
-        <img src="<?= BASEURL; ?>/img/bibit mangga.png" alt="Gambar Tanaman Mangga">
-        <h1>Bibit Mangga</h1>
+        <img src="<?= BASEURL; ?>/img/bibit <?= $data['pangan']['nama']; ?>.png" alt="Gambar Tanaman <?= $data['pangan']['nama']; ?> ">
+        <h1>Bibit <?= $data['pangan']['nama']; ?> </h1>
    </div>
 
 
@@ -16,7 +16,7 @@
     <h3>Ciri Ciri Tanaman</h3>
     <p><i>
         <?php if (!empty($data['pangan'])): ?>
-            <?= $data['pangan']['ciri']; ?>  Menampilkan data ciri tanaman
+            <?= $data['pangan']['ciri']; ?>  
         <?php else: ?>
             <p>Data tanaman tidak ditemukan.</p>
         <?php endif; ?>
@@ -26,7 +26,7 @@
         <?php endforeach; ?> -->
     </i></p>
    </div>
-   <h3>Cara Penanaman</h3>
+   
            
 
    <div class="penanaman">
