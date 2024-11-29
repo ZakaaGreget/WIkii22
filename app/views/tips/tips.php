@@ -27,7 +27,7 @@
    
            
 
-   <div class="penanaman">
+   <div class="penanaman" style="background-color: #f1f7ef;">
     <h3>Cara Penanaman</h3>
     <p><i>Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu: biji OBED</i></p>
     <ul>
