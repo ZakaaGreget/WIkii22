@@ -16,7 +16,7 @@
                 <nav>
                     <ul>
                         <li><a href="<?= BASEURL; ?>/home">Home</a></li>
-                        <li><a href="<?= BASEURL; ?>/tips">Tips</a></li>
+                        <li><a href="<?= BASEURL; ?>/tips?nama=Mangga">Tips</a></li>
                     </ul>
                 </nav>
     </header>
