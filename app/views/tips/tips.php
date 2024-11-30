@@ -27,9 +27,9 @@
    
            
 
-   <div class="penanaman" style="background-color: #f1f7ef;">
+   <div class="penanaman d-flex" style="background-color: #f1f7ef;">
     <h3>Cara Penanaman</h3>
-    <p><i>Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu: biji OBED</i></p>
+    <p><i>Tata cara penanaman bibit mangga dapat dilakukan dengan beberapa cara, yaitu :</i></p>
     <ul>
         <i>
             <?php if (!empty($data['pangan'])): ?>
@@ -45,7 +45,7 @@
 
    <div class="perawatan">
     <h3>Perawatan Khusus</h3>
-    <p><i>Selain cara penanaman, ada beberapa hal yang perlu diperhatikan untuk menanam pohon mangga, yaitu:</i></p>
+    <p><i>Selain cara penanaman, ada beberapa hal yang perlu diperhatikan untuk menanam pohon mangga, yaitu :</i></p>
     <ul>
         <i> 
             <?php if (!empty($data['pangan'])): ?>

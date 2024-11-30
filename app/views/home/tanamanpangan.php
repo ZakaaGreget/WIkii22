@@ -58,30 +58,30 @@
             <li><a href="<?= BASEURL; ?>/tips?nama=Rambutan">Bibit Rambutan</a></li>
         </ul>
         <ul class="tanaman7">
-            <li><a href="<?= BASEURL; ?>/tips?nama="><img src="<?= BASEURL; ?>/img/bibit durian.png" alt="Bibit Durian"></a></li>
-            <li><a href="<?= BASEURL; ?>/tips?nama=">Bibit Durian</a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Durian"><img src="<?= BASEURL; ?>/img/bibit durian.png" alt="Bibit Durian"></a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Durian">Bibit Durian</a></li>
         </ul>
         <ul class="tanaman8">
-            <li><a href="<?= BASEURL; ?>/tips?nama="><img src="<?= BASEURL; ?>/img/bibit jeruk nipis.png" alt="Bibit Jeruk Nipis"></a></li>
-            <li><a href="<?= BASEURL; ?>/tips?nama=">Bibit Jeruk Nipis</a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Jeruk Nipis"><img src="<?= BASEURL; ?>/img/bibit jeruk nipis.png" alt="Bibit Jeruk Nipis"></a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Jeruk Nipis">Bibit Jeruk Nipis</a></li>
         </ul>
     </section>
 
     <section class="tanaman3-grid">
         <ul class="tanaman9">
-            <li><a href="<?= BASEURL; ?>/tips?nama="><img src="<?= BASEURL; ?>/img/bibit buah tin.png" alt="Bibit Buah Tin"></a></li>
-            <li><a href="<?= BASEURL; ?>/tips?nama=">Bibit Tin</a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Tin"><img src="<?= BASEURL; ?>/img/bibit buah tin.png" alt="Bibit Buah Tin"></a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Tin">Bibit Tin</a></li>
         </ul>
         <ul class="tanaman10">
-            <li><a href="<?= BASEURL; ?>/tips?nama="><img src="<?= BASEURL; ?>/img/bibit stroberi.png" alt="Bibit Stroberi"></a></li>
-            <li><a href="<?= BASEURL; ?>/tips?nama=">Bibit Stroberi</a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Stroberi"><img src="<?= BASEURL; ?>/img/bibit stroberi.png" alt="Bibit Stroberi"></a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Stroberi">Bibit Stroberi</a></li>
         </ul>
         <ul class="tanaman11">
-            <li><a href="<?= BASEURL; ?>/tips?nama="><img src="<?= BASEURL; ?>/img/bibit matoa.png" alt="Bibit Matoa"></a></li>
-            <li><a href="<?= BASEURL; ?>/tips?nama=">Bibit Matoa</a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Matoa"><img src="<?= BASEURL; ?>/img/bibit matoa.png" alt="Bibit Matoa"></a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Matoa">Bibit Matoa</a></li>
         </ul>
         <ul class="tanaman12">
-            <li><a href="<?= BASEURL; ?>/tips?nama="><img src="<?= BASEURL; ?>/img/bibit alpukat.png" alt="Bibit Alpukat"></a></li>
-            <li><a href="<?= BASEURL; ?>/tips?nama=">Bibit Alpukat</a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Alpukat"><img src="<?= BASEURL; ?>/img/bibit alpukat.png" alt="Bibit Alpukat"></a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Alpukat">Bibit Alpukat</a></li>
         </ul>
     </section>
