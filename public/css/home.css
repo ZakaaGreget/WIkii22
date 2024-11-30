@@ -20,16 +20,28 @@ body{
   top: 0;
   background-color: #213222;
   font-size: 20px;
+  display: flex;
+  width: 100%;
   
+}
+.logo{
+    font-family: 'poppins';
+    color: white;
+    font-weight: bold;
 }
 
 nav{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: #213222;
     padding: 30px;
     width: 100%;
     text-align: center;
+    font-family: 'poppins';
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    
 }
 
 nav a{

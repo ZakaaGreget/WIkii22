@@ -15,6 +15,7 @@
     <header class="sticky">
             <div class="logo"></div>
                 <nav>
+                <a href="<?= BASEURL; ?>/home">WikiTani</a>
                     <ul>
                         <li><a href="<?= BASEURL; ?>/home">Home</a></li>
                         <li><a href="<?= BASEURL; ?>/tips?nama=Mangga">Tips</a></li>
