@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing:border-box;
 }
+
 @font-face {
   font-family: 'poppins';
   src: url('../assets/Poppins-Regular.ttf');
@@ -22,7 +23,6 @@ body{
   font-size: 20px;
   display: flex;
   width: 100%;
-  
 }
 .logo{
     font-family: 'poppins';
@@ -32,7 +32,6 @@ body{
 
 nav{
     display: flex;
-    /* justify-content: space-between; */
     background-color: #213222;
     padding: 30px;
     width: 100%;
@@ -41,22 +40,25 @@ nav{
     font-size: 24px;
     font-weight: bold;
     color: white;
-    
 }
 
 nav a{
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
+  justify-content: space-between;
 }
 
 nav ul{
   display: flex;
+  list-style-type: none;
 }
 
 nav ul li{
-  list-style-type: none;
+  margin-left: 0 20px;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /*TAMPILAN AWAL*/

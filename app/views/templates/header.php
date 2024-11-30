@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/tanamanpangan.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/tips.css">
 
-  
 </head>
     <header class="sticky">
             <div class="logo"></div>
