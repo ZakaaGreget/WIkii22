@@ -10,11 +10,7 @@
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/tanamanpangan.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/tips.css">
 
-    <link rel="stylesheet" https://7897-114-79-1-20.ngrok-free.app/Wikii22/WIKIIFIX/public/css/home.css">
-    <link rel="stylesheet" https://7897-114-79-1-20.ngrok-free.app/Wikii22/WIKIIFIX/public/css/tanamanhias.css">
-    <link rel="stylesheet" https://7897-114-79-1-20.ngrok-free.app/Wikii22/WIKIIFIX/public/css/tanamanpangan.css">
-    <link rel="stylesheet" https://7897-114-79-1-20.ngrok-free.app/Wikii22/WIKIIFIX/public/css/tips.css">
-    
+  
 </head>
     <header class="sticky">
             <div class="logo"></div>
