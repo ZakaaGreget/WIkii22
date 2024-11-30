@@ -76,7 +76,7 @@
             <li><a href="<?= BASEURL; ?>/tips?nama=Rambutan">Bibit Rambutan</a></li>
         </ul>
         <ul class="tanaman7">
-            <li><a href="<?= BASEURL; ?>/tips?nama=Sri Rejeki"><img src="<?= BASEURL; ?>/img/sri rejeki.png" alt="Sri Rejeki"></a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Sri Rejeki"><img src="<?= BASEURL; ?>/img/bibit sri rejeki.png" alt="Sri Rejeki"></a></li>
             <li><a href="<?= BASEURL; ?>/tips?nama=Sri Rejeki">Sri Rejeki</a></li>
         </ul>
         <ul class="tanaman8">
@@ -91,7 +91,7 @@
             <li><a href="<?= BASEURL; ?>/tips?nama=Alpukat">Bibit Alpukat</a></li>
         </ul>
         <ul class="tanaman10">
-            <li><a href="<?= BASEURL; ?>/tips?nama=Kuping Gajah"><img src="<?= BASEURL; ?>/img/kuping gajah.png" alt="Kuping Gajah"></a></li>
+            <li><a href="<?= BASEURL; ?>/tips?nama=Kuping Gajah"><img src="<?= BASEURL; ?>/img/bibit kuping gajah.png" alt="Kuping Gajah"></a></li>
             <li><a href="<?= BASEURL; ?>/tips?nama=Kuping Gajah">Kuping Gajah</a></li>
         </ul>
         <ul class="tanaman11">
