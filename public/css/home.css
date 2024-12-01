@@ -28,8 +28,11 @@ body{
     font-family: 'poppins';
     color: white;
     font-weight: bold;
+    text-decoration: none;
 }
-
+.logo > nav > a{
+ text-decoration: none;
+}
 nav{
     display: flex;
     background-color: #213222;
@@ -44,6 +47,8 @@ nav{
 
 nav a{
   justify-content: space-between;
+  text-decoration: none;
+  color: white;
 }
 
 nav ul{
@@ -52,7 +57,7 @@ nav ul{
 }
 
 nav ul li{
-  margin-left: 0 20px;
+  margin-left: 30px;
 }
 
 nav ul li a{
