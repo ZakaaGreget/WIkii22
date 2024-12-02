@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/tanamanhias.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/tanamanpangan.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/tips.css">
+    <script src="<?= BASEURL; ?>/js/searchbar.js"></script>
 
 </head>
     <header class="sticky">
