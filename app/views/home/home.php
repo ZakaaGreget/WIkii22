@@ -14,40 +14,14 @@
         <div class="choose">
             <h3>Pilih Tanamanmu Disini</h3>
         </div>
-        <form id="searchForm" method="POST" action="<?= BASEURL; ?>/tips">
+        
         <div class="search">
-                <input type="text" id="searchBar" name="nama" placeholder="Cari">
-        </form>
+            <input type="text" id="searchBar" name="nama" placeholder="Cari">
         </div>
     </div>
-    <script>
-        // Ambil elemen input
-        const basePath = "<?= BASEURL; ?>/tips";
-        const searchInput = document.getElementById("input[name='nama']");
-        const searchForm = document.getElementById("searchForm");
 
-        // Tambahkan event listener untuk mendeteksi tombol Enter
-        searchInput.addEventListener("keydown", function(event) {
-            if (event.key === "Enter") {
-                event.preventDefault(); // Cegah submit default
-                searchForm.submit(); // Kirimkan form secara manual
-            }
-        });
-    </script>
+    <script src="<?= BASEURL; ?>/js/searchbar.js"></script> <!-- Panggil script pencarian -->
 
-    <script>
-        const basePath = "<?= BASEURL; ?>/tips";
-        document.getElementById('searchForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Mencegah reload halaman
-            const searchValue = document.getElementById('searchBar').value.trim();
-            if (searchValue) {
-                const queryString = `?nama=${encodeURIComponent(searchValue)}`;
-                window.location.href = window.location.origin + window.location.pathname + queryString;
-            } else {
-                alert('Search bar tidak boleh kosong!');
-            }
-        });
-    </script>
   
    <!--Kategori-->
     <div class="kategori">
