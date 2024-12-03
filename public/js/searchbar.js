@@ -1,20 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const searchForm = document.getElementById("searchForm");
     const searchInput = document.getElementById("searchBar");
+    const basePath = "http://localhost/Wikii22/WIKIIFIX/public/tips";
 
-    searchInput.addEventListener("keydown", function (event) {
-        if (event.key === "Enter") {
-            event.preventDefault(); // Cegah aksi default
-            console.log("Tombol Enter ditekan"); // Menambahkan log untuk memastikan event dipicu
+    if (searchForm && searchInput) {
+        console.log("Form dan input ditemukan!");
+
+        searchForm.addEventListener("keydown", function (event) {
+            event.preventDefault(); // Cegah pengiriman form bawaan
+            console.log("Form di-submit");
 
             const searchValue = searchInput.value.trim();
-            console.log("Nilai pencarian: ", searchValue); // Log nilai pencarian
+            console.log("Nilai input: ", searchValue);
 
             if (searchValue) {
                 const queryString = `?nama=${encodeURIComponent(searchValue)}`;
-                window.location.href = basePath + queryString;
+                console.log("Redirecting ke: ", basePath + queryString);
+                window.location.href = basePath + queryString; // Redirect ke URL
             } else {
                 alert("Search bar tidak boleh kosong!");
             }
-        }
-    });
+        });
+    } else {
+        console.error("Form atau input tidak ditemukan!");
+    }
 });
