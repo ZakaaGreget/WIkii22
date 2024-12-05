@@ -10,42 +10,41 @@
         </div>
    </div>
 
-    <div class="atas">
-        <div class="choose">
-            <h3>Pilih Tanamanmu Disini</h3>
-        </div>
-        
-        <form id="searchForm" method="POST" action="<?= BASEURL; ?>/tips">
-        <div class="search">
-                <!-- <input type="text" name="nama" placeholder="Cari"> -->
-                <input type="text" id="searchBar" name="nama" placeholder="Cari">
-        </form>
-        </div>
+   <div class="atas">
+    <div class="choose">
+        <h3>Pilih Tanamanmu Disini</h3>
     </div>
-
-
     
-    <script>
-        // Ambil elemen input
-        const basePath = "<?= BASEURL; ?>/tips";
-        const searchInput = document.getElementById("input[name='nama']");
-        const searchForm = document.getElementById("searchForm");
+    <form id="searchForm" method="POST" action="<?= BASEURL; ?>/tips">
+        <div class="search">
+            <input type="text" id="searchBar" name="nama" placeholder="Cari">
+        </div>
+    </form>
+</div>
 
-    </script>
+<script>
+    // Ambil elemen-elemen yang diperlukan
+    const basePath = "<?= BASEURL; ?>/tips";
+    const searchForm = document.getElementById("searchForm");
+    const searchInput = document.getElementById("searchBar");
 
-    <script>
-        const basePath = "<?= BASEURL; ?>/tips";
-        document.getElementById('searchForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Mencegah reload halaman
-            const searchValue = document.getElementById('searchBar').value.trim();
-            if (searchValue) {
-                const queryString = `?nama=${encodeURIComponent(searchValue)}`;
-                window.location.href = window.location.origin + window.location.pathname + queryString;
-            } else {
-                alert('Search bar tidak boleh kosong!');
-            }
-        });
-    </script>
+    // Tambahkan event listener pada form
+    searchForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Mencegah reload halaman
+        
+        // Ambil nilai input
+        const searchValue = searchInput.value.trim();
+        
+        // Validasi input kosong
+        if (searchValue === "") {
+            alert('Search bar tidak boleh kosong!');
+        } else {
+            // Redirect ke URL dengan query string
+            const queryString = `?nama=${encodeURIComponent(searchValue)}`;
+            window.location.href = basePath + queryString;
+        }
+    });
+</script>
 
 
 
